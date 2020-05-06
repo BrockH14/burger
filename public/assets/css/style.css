@@ -1,0 +1,16 @@
+li {
+  padding: 10px;
+  margin: 10px;
+  background: #d7e7fa;
+}
+.label {
+  font-weight: bold;
+}
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: rgb(72, 255, 0);
+}
+.form-group {
+  margin-bottom: 5px;
+}
