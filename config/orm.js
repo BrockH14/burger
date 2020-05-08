@@ -1,4 +1,4 @@
-var connection = require("./connection");
+var connection = require("./connection.js");
 function printQMarks(num) {
   var arr = [];
   for (var i = 0; i < num; i++) {
