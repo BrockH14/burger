@@ -1,24 +1,33 @@
+<div class="container">
+    <div class="jumbotron">
+
 <h1>Eat da burger</h1>
 
-<h2>Hot and ready burgers</h2>
 
-<ul>
-  {{#each burger}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
 
-<h2>Burgers that have been eaten!</h2>
+<div class="row">
+  <div class="col-lg-6 pt-4">
+    <h2>Hot and ready burgers</h2>
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
 
-<ul>
-  {{#each burger}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+
+  <div class="col-lg-6 pt-4">
+    <h2>Burgers that have been eaten!</h2>
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
@@ -33,5 +42,7 @@
     <input type="radio" name="devoured" value="0"> Whole
   </div>
 
-  <button type="submit">Add Cat</button>
+  <button type="submit">Add Burger</button>
 </form>
+</div>
+</div>
